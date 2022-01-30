@@ -1,6 +1,8 @@
 const List = () => {
     return (
-        <></>
+        <>
+            List
+        </>
       );
 }
  

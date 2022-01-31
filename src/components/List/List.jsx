@@ -2,20 +2,12 @@ import { CircularProgress , Grid , Typography , InputLabel , MenuItem ,FormContr
 import { useState } from "react";
 import useStyles from "./styles";
 import Card from "../Details/Card"
-const List = () => {
+
+const List = ({places}) => {
     const classes = useStyles();
     const [type , setType] = useState('restaurants');
     const [rate , setRate] = useState('');
-    const places = [
-      {name : "best Res"},  
-      {name : "total Goodies"},  
-      {name : "best Stake"},  
-      {name : "seoul Restaurant"},  
-      {name : "best dinner"},  
-      {name : "best Stake"},  
-      {name : "best Stake"},  
-      {name : "best Stake"},  
-    ];
+    console.log(places);
     return ( 
         <div className={classes.container}>
             <Typography variant="h4">

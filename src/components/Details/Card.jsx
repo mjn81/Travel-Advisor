@@ -1,6 +1,6 @@
-const Card = () => {
+const Card = ({ cardInfo }) => {
     return (
-        <></>
+        <h1>{cardInfo.name}</h1>
       );
 }
  
